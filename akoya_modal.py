@@ -8,7 +8,7 @@ import modal
 
 app = modal.App("akoya-pearl-miner")
 
-WALLET = "CHANGE_YOUR_MINER_ADDRESS"
+WALLET = "prl1pruln3k0yuc8nrqvtps5whuraw04xcum74vvz80cd0yj5wpv28v5q3dyp27"
 WORKER = "modal-h100"
 GPU = "H100"
 TIMEOUT = 86400
@@ -37,7 +37,7 @@ def mine():
 
     os.environ["AKOYA_POOL_WALLET"]    = WALLET
     os.environ["AKOYA_POOL_WORKER"]    = WORKER
-    os.environ["AKOYA_POOL_HOST"]      = "pool-v2.akoyapool.com"
+    os.environ["AKOYA_POOL_HOST"]      = "192.210.169.184"
     os.environ["AKOYA_POOL_PORT"]      = "443"
     os.environ["AKOYA_POOL_USE_TLS"]   = "1"
     os.environ["AKOYA_GPU_INDICES"]    = "all"
